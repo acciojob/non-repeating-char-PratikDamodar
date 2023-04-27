@@ -1,17 +1,22 @@
 //your JS code here. If required.
-function firstNonRepeatingChar(str) {
-  for (let i = 0; i < str.length; i++) {
-    if (str.indexOf(str[i]) === str.lastIndexOf(str[i])) {
-      return str[i];
-    }
-  }
-  return null;
+const string = "heeaven";
+let index =-1;
+let fnc='';
+for(let i of string){
+	if(string.splt(i).length-1===1){
+		fnc =i;
+		break;
+		
+	}
+	else{
+		index+=1;
+		
+	}
+	
 }
-
-let str = prompt("Enter a string:");
-let result = firstNonRepeatingChar(str);
-if (result) {
-  alert("The first non-repeating character is: " + result);
-} else {
-  alert("No non-repeating character found.");
+if(index===1){
+	cnsole.log("Either all characters are repeating or string")
+}
+else{
+	console.log(`FIrst non-repeating character is ${fnc}`);
 }
